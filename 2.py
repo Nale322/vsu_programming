@@ -1,4 +1,4 @@
-a = float(input ('a: '))
+a = float(input('a: '))
 b = float(input('b: '))
 c = float(input('c: '))
 f = float(input('f: '))
