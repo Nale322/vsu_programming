@@ -6,6 +6,6 @@ d = float(input('d: '))
 g = f - d
 
 if g:
-    print ('ne delit') 
+    print ((a*b - c) / g)
 else:
-    print ((a * b - c) / g) 
+    print ('ne delit')
