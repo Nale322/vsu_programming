@@ -9,5 +9,5 @@ elif x < 0 and y < 0:
     print('III Chetvert`')
 elif x > 0 and y < 0:
     print('IV Chetvert`')
-else
+else:
     print('Lezhat na odnoi osi')
