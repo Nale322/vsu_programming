@@ -1,5 +1,7 @@
+f = input()
 num_list = []
-for i in range(int(input())):
-    num_list.append(input())
+while f:
+    num_list.append(f)
+    f = input()
 num_list = sorted(num_list, reverse = True)
 print("".join(num_list))
