@@ -1,5 +1,5 @@
 import random
-b = int()
+b = None
 a = random.randint(0, 100)
 while b != a:
     b = int(input("Введи число: "))
