@@ -6,5 +6,4 @@ elif 2 < a < 6:
 elif 5 < a < 9:
     print("Leto")
 else:
-    8 < a < 12
     print("Osen")
