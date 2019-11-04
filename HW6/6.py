@@ -1,12 +1,9 @@
-import math
-import random
-
 storage = [[] for x in range(20)]
-a = random.randint(0, 100)
 
 def hash(key):
-    index = math.sqrt(a)
-    return int(index)
+    index = int(2) * len(key)
+    index += index
+    return index
 
 def set_value(key, value):
     index = hash(key)
@@ -39,7 +36,7 @@ set_value('cba', 4)
 set_value('cba', 10)
 
 set_value('XYN', 3)
-set_value('XYN', 31)
+set_value('XYN', 11)
 print(storage)
 del_value('XYN')
 
