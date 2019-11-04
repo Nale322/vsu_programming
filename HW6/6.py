@@ -23,7 +23,7 @@ def del_value(key):
     index = hash(key)
     for i in storage[index]:
         if key == i[0]:
-            i[1] = 0
+            storage[index].remove(i)
             break
 
 
