@@ -1,4 +1,4 @@
-storage = [[] for x in range(20)]
+storage = [[] for x in range(20000)]
 
 def hash(key):
     index =  key + key + key
