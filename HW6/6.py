@@ -1,9 +1,12 @@
+import math
+import random
+
 storage = [[] for x in range(20)]
+a = random.randint(0, 100)
 
 def hash(key):
-    index = sum(list(map(ord, key)))
-    index = sum(list(map(int, str(index))))
-    return index % len(storage)
+    index = math.sqrt(a)
+    return int(index)
 
 def set_value(key, value):
     index = hash(key)
