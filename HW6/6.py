@@ -1,8 +1,8 @@
-storage = [[] for x in range(20000)]
+storage = [[] for x in range(20)]
 
 def hash(key):
     index =  key + key + key
-    return len(index) * 2
+    return (len(index) * 2) % 20
 
 def set_value(key, value):
     index = hash(key)
