@@ -9,8 +9,8 @@ def set_value(key, value):
     for i in storage[index]:
         if key == i[0]:
             i[1] = value
-            break    
-    else:    
+            break
+    else:
         storage[index].append([key, value])
 
 def get_value(key):
@@ -34,6 +34,10 @@ set_value('abc', 2)
 set_value('cba', 4)
 set_value('cba', 10)
 
+set_value('abdc', 1123)
+set_value('abdc', 2123)
+set_value('zxc', 2123)
+
 set_value('XYN', 3)
 set_value('XYN', 11)
 print(storage)
@@ -42,5 +46,9 @@ del_value('XYN')
 print(get_value('abc'))
 print(get_value('cba'))
 print(get_value('XYN'))
+
+print(get_value('abdc'))
+print(get_value('abdc'))
+print(get_value('zxc'))
 
 print(storage)
