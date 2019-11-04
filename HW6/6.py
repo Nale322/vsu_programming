@@ -1,7 +1,9 @@
 storage = [[] for x in range(20)]
 
 def hash(key):
-    return len(key) % 2
+    index = sum(list(map(ord, key)))
+    index = sum(list(map(int, str(index))))
+    return index % len(storage)
 
 def set_value(key, value):
     index = hash(key)
