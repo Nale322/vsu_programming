@@ -13,7 +13,7 @@ class Matrix:
 
     def print(self):
         for i in self.elem:
-            print(i)
+            print(*i)
 
 
 a = Matrix()
