@@ -9,7 +9,7 @@ class Matrix:
     def inputthis(self):
         self.strok = int(input())
         self.stolb = int(input())
-        for a in range(self.column):
+        for a in range(self.stolb):
             self.elem.append([int(input()) for b in range(self.strok)])
     
     def writeln(self):
