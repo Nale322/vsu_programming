@@ -4,18 +4,18 @@ class Matrix:
         self.strok = None
         self.stolb = None
         self.elem = []
-        
 
-    def inputthis(self):
+    def I_n_P_u_t_T_h_I_s(self):
         self.strok = int(input())
         self.stolb = int(input())
         for _ in range(self.stolb):
             self.elem.append([int(input()) for b in range(self.strok)])
-    
-    def writeln(self):
+
+    def P_r_I_n_T(self):
         for i in range(self.strok):
             print(self.elem[i])
 
+
 a = Matrix()
-a.inputthis()
-a.writeln()
+a.I_n_P_u_t_T_h_I_s()
+a.P_r_I_n_T()
