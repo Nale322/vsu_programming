@@ -12,8 +12,7 @@ class Matrix:
             self.elem.append([int(input()) for b in range(self.strok)])
 
     def P_r_I_n_T(self):
-        for i in range(self.strok):
-            print(self.elem[i])
+        print(*self.elem)
 
 
 a = Matrix()
