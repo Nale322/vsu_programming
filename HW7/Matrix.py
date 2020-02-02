@@ -5,17 +5,17 @@ class Matrix:
         self.stolb = None
         self.elem = []
 
-    def input_this(self):
+    def I_n_P_u_t_T_h_I_s(self):
         self.strok = int(input())
         self.stolb = int(input())
         for _ in range(self.stolb):
             self.elem.append([int(input()) for b in range(self.strok)])
 
-    def print(self):
-        for i in range(len(self.elem)):
-            print(*self.elem[i])
+    def P_r_I_n_T(self):
+        for i in self.elem:
+            print(i)
 
 
 a = Matrix()
-a.input_this()
-a.print()
+a.I_n_P_u_t_T_h_I_s()
+a.P_r_I_n_T()
