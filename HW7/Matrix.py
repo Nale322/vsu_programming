@@ -9,13 +9,11 @@ class Matrix:
     def inputthis(self):
         self.strok = int(input())
         self.stolb = int(input())
-        self.elem.append([[input() for a in range(self.stolb)] for b in range(self.strok)])
+        for a in range(self.column):
+            self.elem.append([int(input()) for b in range(self.strok)])
     
     def writeln(self):
-        for row in self.elem:
-            for elem in row:
-                print(elem, end=' ')
-                print()
+        print(self.elem, end=' ')
 
 a = Matrix()
 a.inputthis()
