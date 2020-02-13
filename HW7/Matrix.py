@@ -11,11 +11,11 @@ class Matrix:
         for _ in range(self.stolb):
             self.elem.append([int(input()) for b in range(self.strok)])
 
-    def print(self):
+    def __str__(self):
         for i in self.elem:
             print(*i)
 
 
 a = Matrix()
 a.input_this()
-a.print()
+a.__str__()
