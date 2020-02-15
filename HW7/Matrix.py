@@ -8,11 +8,16 @@ class Matrix:
     def input_this(self):
         self.strok = int(input())
         self.stolb = int(input())
-        self.elem = [[int(input()) for x in range(self.stolb)]
-                    for x in range(self.strok)]
+        for _ in range(self.stolb):
+            self.elem.append([input() for b in range(self.strok)])
 
     def __str__(self):
-        return '\n'.join(' '.join(str(i) for i in x) for x in self.elem)
+        f = ''
+        for x in self.elem:
+            f += '\n'
+            for i in x:
+                f += f'{i} '
+        return f
 
 
 a = Matrix()
