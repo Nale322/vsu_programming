@@ -7,7 +7,7 @@ class Matrix:
         self.elem = elem	
     def __str__(self): 
         f = ''
-        for x in self.matrix:
+        for x in self.elem:
             f += '\n'
             for i in x:
                 f += f'{i}  '
